@@ -1,0 +1,154 @@
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+.top-container h1 {
+  /*
+      width:10%;
+      margin: 0 auto;/*in case the adding width property : we use the margin for centering the elements
+      */
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem;
+  color: #66bfbf;
+}
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+.bottom-cloud {
+  position: absolute; /*position absoulute of the div top-container */
+  left: 250px;
+  bottom: 300px; /*value bottom is 300 in top-container*/
+}
+.Intro {
+  width: 30%;
+  margin: auto;
+}
+h2,
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #11999e;
+}
+h2 {
+  font-size: 2.5rem;
+  color: #66bfbf;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 2;
+}
+hr {
+  width: 4%;
+  border-style: dotted none none;
+  border-width: 6px;
+  border-color: #eaf6f6;
+  margin: 80px auto;
+}
+.top-container .webstyle {
+  text-decoration: underline;
+}
+.middle-container {
+  margin: 100px 0;
+}
+.pro-img {
+  width: 175px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.skill-row img {
+  width: 20%;
+}
+.skill-row .design {
+  float: left;
+  margin-right: 30px;
+}
+.skill-row .computer {
+  border-radius: 50%;
+  float: right;
+  margin-left: 30px;
+}
+.text-btn {
+  margin-bottom: 60px;
+}
+.btn {
+  color: white;
+  padding: 15px 35px;
+  background-color: #11999e;
+  border-radius: 15px;
+  margin-bottom: 70px;
+  transition: all 0.25s ease-in-out;
+}
+.btn:hover {
+  background-color: #11899e;
+  box-shadow: 2px 2px 10px rgba(224, 224, 224, 0.856);
+}
+.bottom-container {
+  background-color: #66bfbf;
+  padding: 50px 0 15px 0;
+  line-height: 2;
+}
+a {
+  color: #11999e;
+  margin: 10px 20px;
+  font-family: "Montserrat", sans-sedif;
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+.bottom-container a:hover {
+  color: white;
+  font-size: 1.125em;
+}
+.footer-paragraph {
+  color: #eaf6f6;
+  font-size: 12px;
+  transition: all 0.5s ease-in-out;
+}
+.footer-paragraph:hover {
+  color: #6b6b6b;
+  font-size: 0.8em;
+}
+
+/* Media query */
+
+/*min-width: 480px	Mobile-landscape (and larger)
+min-width: 768px	Tablet-portrait (and larger)
+min-width: 992px	Tablet-landscape (and larger)
+min-width: 1200px	Laptops (and langer)*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .top-container [src="images/mountain.png"] {
+    width: 100%;
+  }
+  .bottom-cloud {
+    left: 285px;
+    bottom: 400px;
+  }
+  .top-cloud {
+    right: 275px;
+  }
+  .Intro {
+    width: 65%;
+  }
+  .skill-row {
+    width: 85%;
+  }
+  .text-btn {
+    padding: 25px 45px;
+  }
+}
